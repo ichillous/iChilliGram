@@ -91,27 +91,27 @@ f
 
 > Below are all the wireframes. 
 
-![Whimsical](https://whimsical.com/AeJjRZwSikkzA5jBPCet6T)
+![Desktop View](https://imgur.com/a/7qDTlGy)
 
 - Desktop Landing
 
-![Dummy Link](url)
+![Dummy Link](https://imgur.com/a/7qDTlGy)
 
 - Desktop Hero
 
-![Dummy Link](url)
+![ERD](https://imgur.com/a/E05CEVo)
 
-- Resource Index
+- ERD flow chart
 
-![Dummy Link](url)
+![Component Tree](https://imgur.com/a/oI5pyIn)
 
-- Resource Show
+- Component tree information
 
-![Dummy Link](url)
+![Tablet View](https://imgur.com/a/ICNyci0)
 
 - Tablet Resource Index
 
-![Dummy Link](url)
+![Mobile View](https://imgur.com/a/hnakCqa)
 
 - Mobile Resource Index
 
