@@ -1,4 +1,4 @@
-# INSTAGRAM CLONE <!-- omit in toc -->
+# iChilliGram CLONE <!-- omit in toc -->
 
 > The following README contains information regarding the layout of this instagram clone. 
 >
@@ -50,7 +50,7 @@ _The **INSTAGRAM clone** MVP will be able to perform full crud on user photos.
 - _Being able to comment on pictures._
 - _Being able to edit photo comments._
 - _Users will be able to add username to comments._
-f
+
 <br>
 
 ### Libraries and Dependencies
@@ -72,29 +72,14 @@ f
 
 > Below are all the wireframes. 
 
-[Desktop View](https://imgur.com/a/7qDTlGy)
+[Wireframes](https://whimsical.com/AeJjRZwSikkzA5jBPCet6T)
 
 - Desktop Landing
-
-[Dummy Link](https://imgur.com/a/7qDTlGy)
-
-- Desktop Hero
-
-[ERD](https://imgur.com/a/E05CEVo)
-
-- ERD flow chart
 
 [Component Tree](https://imgur.com/a/oI5pyIn)
 
 - Component tree information
 
-[Tablet View](https://imgur.com/a/ICNyci0)
-
-- Tablet Resource Index
-
-[Mobile View](https://imgur.com/a/hnakCqa)
-
-- Mobile Resource Index
 
 #### Component Tree
 
