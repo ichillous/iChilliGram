@@ -159,8 +159,9 @@ __ screens/
 |    Header    | functional |   n   |   n   | _The header will contain the navigation, logo, search bar, messages and profile picture._               |
 |  Navigation  | functional |   n   |   n   | _The navigation allow users to explore more content(Post-MVP)._       |
 |   Post    |   class    |   y   |   y   | _The post will render the posts using cards in flexbox._      |
-| Gallery Card | functional |   n   |   y   | _The cards will render the post info via props._                 |
-|    Footer    | functional |   n   |   n   | _The footer will show info about me and a link to my portfolio._ |
+| Comments | functional |   y  |   y   | _The comments will render within post._                 |
+| NewComment | functional |   y  |   y   | _The comments will create new comment and render a small form._
+|    Likes    | functional |   y  |   y   | _The likes component will add likes and render them on specific post._ |
 
 #### Time Estimates
 
