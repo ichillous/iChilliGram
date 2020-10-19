@@ -117,11 +117,11 @@ f
 
 #### Component Tree
 
-> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. 
+> 
 
 #### Component Hierarchy
 
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
+> This is what the component hierarchy will resemble. All components will have their own css file 
 
 ``` structure
 
@@ -133,13 +133,26 @@ src
       |__ mockups
 |__ components/
       |__ Header.jsx
+      |__ Post.jsx
+      |__ Update.jsx
+      |__ Delete.jsx
+      |__ NewPost.jsx
+      |__ Comments.jsx
+      |__ Likes.jsx
 |__ services/
+      |__apiConfig.js
+      |__posts.js
+__ screens/
+      |__home
+      |__post
+      |__postdetail
+      |__comments
 
 ```
 
 #### Component Breakdown
 
-> Use this section to go into further depth regarding your components, including breaking down the components as stateless or stateful, and considering the passing of data between those components.
+> This is my estimated time allocated to the creation of this app.
 
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
@@ -155,11 +168,13 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+| RUBY setup |    H     |     7 hrs      |      hrs     |     TBD     |
+| Add Image and title Form    |   H     |     3 hrs      |      hrs     |     TBD   |
+| Create CRUD Actions |    H     |     20 hrs      |      hrs     |     TBD     |
+| CSS styling |    H     |     10 hrs      |      hrs     |     TBD     |
+| TOTAL               |          |     40 hrs      |      hrs     |     TBD     |
 
-> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
+> _I am certain this will take longer than I expect it to in regards to ruby, I will start on that._
 
 <br>
 
@@ -175,7 +190,7 @@ src
 
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+> Post MVP will include, user account creation/deletion as well as adding searchbar functionality. 
 
 ***
 
