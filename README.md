@@ -149,7 +149,7 @@ __ screens/
 
 #### ERD Model
 
-> https://whimsical.com/Md3iZDydtDGsENZWYPL5nk .
+[ERD Markdown](erd.drawio.png)
 
 <br>
 
