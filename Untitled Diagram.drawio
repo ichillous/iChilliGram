@@ -1,0 +1,30 @@
+<mxfile host="app.diagrams.net" modified="2020-10-20T02:07:35.522Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.80 Safari/537.36" etag="S2pi5fABpIG-WuqBW9BV" version="13.7.7" type="github">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="682" dy="590" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-2" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=ERoneToMany;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-3" target="m13bn4b9ltrIni-EVIUg-0" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="205" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-3" value="&lt;p style=&quot;line-height: 120%&quot;&gt;&lt;/p&gt;&lt;div style=&quot;text-align: left ; position: relative&quot;&gt;&lt;span&gt;Posts: &lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left ; position: relative&quot;&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left ; position: relative&quot;&gt;&lt;span&gt;id - SPK&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left ; position: relative&quot;&gt;&lt;span&gt;user_id - FRK&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left ; position: relative&quot;&gt;&lt;span&gt;title -string&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left ; position: relative&quot;&gt;img_url - string&lt;/div&gt;&lt;div style=&quot;text-align: left ; position: relative&quot;&gt;&lt;span&gt;username - string&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left ; position: relative&quot;&gt;&lt;span&gt;created_at - Timestamp&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left ; position: relative&quot;&gt;&lt;span&gt;Updated_at - Timestamp&lt;/span&gt;&lt;/div&gt;&lt;p&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;align=center;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="110" y="40" width="170" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="m13bn4b9ltrIni-EVIUg-0" value="&lt;div style=&quot;position: relative&quot;&gt;&lt;div style=&quot;text-align: left ; position: relative&quot;&gt;&lt;span&gt;Comments:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left ; position: relative&quot;&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;position: relative&quot;&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left ; position: relative&quot;&gt;&lt;span&gt;created_at - Timestamp&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left ; position: relative&quot;&gt;&lt;span&gt;id - SPK&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left ; position: relative&quot;&gt;&lt;span&gt;content - string&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left ; position: relative&quot;&gt;&lt;span&gt;comment_text - string&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left ; position: relative&quot;&gt;&lt;span&gt;username - string&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;position: relative&quot;&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="20" y="230" width="160" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="m13bn4b9ltrIni-EVIUg-1" value="&lt;div style=&quot;position: relative&quot;&gt;&lt;div style=&quot;text-align: left ; position: relative&quot;&gt;&lt;span&gt;Tags:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left ; position: relative&quot;&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;position: relative&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left ; position: relative&quot;&gt;name - string&lt;/div&gt;&lt;div style=&quot;text-align: left ; position: relative&quot;&gt;category - string&lt;/div&gt;&lt;div style=&quot;text-align: left ; position: relative&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;position: relative&quot;&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="254" y="230" width="166" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="m13bn4b9ltrIni-EVIUg-2" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=ERone;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-3" target="m13bn4b9ltrIni-EVIUg-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="205" y="180" as="sourcePoint" />
+            <mxPoint x="110" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
