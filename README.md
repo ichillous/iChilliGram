@@ -149,7 +149,7 @@ __ screens/
 
 #### ERD Model
 
-![ERD Markdown](erd.drawio.png)
+![ERD Markdown](erd.png)
 
 <br>
 
