@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+    has_many: :comments, 
+    :has_one :tag
     def new
         @post = Post.new
     end
@@ -6,32 +8,30 @@ class PostsController < ApplicationController
     #GET /posts/1
     def show
         @post = Post.find(params[:id])
-        render json: @posts, include: :posts
+        render json: @posts, include: :comments
     end
 
     #GET /posts
     def index
         @posts = Post.all
 
-        render json: @posts
+        render json: @posts, include: :comments
     end
     #POST /posts
     def create
         @post = Post.new(params[:post].permit(:title, :username, :img_url))
-    
-        @post.save
-        redirect_to @post
-        # if @post.save
-        #     render json: @post, status: :created, location: @post
-        # else
-        #     render json: @post.errors, status: :unprocessable_entity
-        # end
+        
+        if @post.save
+            render json: @post, include: :comments , status: :created
+        else
+            render json: @post.errors, status: :unprocessable_entity
+        end
     end
 
     #PATCH/PUT /posts/1
     def update
         if @post.update(post_params)
-          render json: @post
+          render json: @post, include: :comments
         else
           render json: @post.errors, status: :unprocessable_entity
         end

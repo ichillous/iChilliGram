@@ -1,4 +1,5 @@
 class CommentsController < ApplicationController
+    belongs_to: :posts, optional: true
     def index
         @post = Post.find(params[:post_id])
         render json: @post.comments

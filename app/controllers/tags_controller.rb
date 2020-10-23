@@ -1,4 +1,5 @@
 class TagsController < ApplicationController
+    belongs_to: :posts, optional: true
     def new
         @tag = Tag.new
     end

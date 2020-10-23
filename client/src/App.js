@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Layout from './layouts/Layout'
 import Nav from './layouts/Nav'
 import Posts from './screens/Posts'
@@ -7,19 +7,20 @@ import { getAllPosts } from './services/posts'
 import './App.css';
 
 function App() {
-  // useState(())
+  const [posts, setPosts] = useState([]);
+
   useEffect(() => {
     const getPosts = async () => {
       const postsData = await getAllPosts();
-      console.log(postsData)
+      setPosts(postsData)
     }
     getPosts();
   }, [])
   return (
     <div className="App">
-      <Nav />
-      <Layout/>
-      <Posts />
+      {/* <Nav /> */}
+      {/* <Layout/> */}
+      <Posts posts={posts}/> {/*passing it down to props*/}
     </div>
   );
 }
