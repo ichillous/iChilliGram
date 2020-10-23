@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 2020_10_20_161958) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+  
 
   create_table "tags", force: :cascade do |t|
     t.string "name"

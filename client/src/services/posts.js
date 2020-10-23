@@ -13,7 +13,7 @@ export const getOnePost = async (id) => {
 
     return resp.data;
 }
-console.log(getOnePost())
+
 
 export const postPost = async (postData) => {
     const resp = await api.post('/posts', {Post: postData});
@@ -24,6 +24,7 @@ export const postPost = async (postData) => {
     const resp = await api.put(`/posts/${id}`, {Post: postData});
     return resp.data;
   }
+  // console.log()
   
   export const destroyPost = async (id) => {
     const resp = await api.delete(`/posts/${id}`);

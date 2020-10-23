@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom"
 
-export default function Posts(props) {
+export default function Post(props) {
   const { posts } = props;
-  console.log(props)
+  console.log(posts)
   return (
     <div>
       <>

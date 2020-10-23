@@ -18,7 +18,7 @@ function App() {
   }, [])
   return (
     <div className="App">
-      {/* <Nav /> */}
+      <Nav />
       {/* <Layout/> */}
       <Posts posts={posts}/> {/*passing it down to props*/}
     </div>

@@ -9,7 +9,7 @@
 Post.destroy_all
 Comment.destroy_all
 Tag.destroy_all
-@post = Post.create!(username: '@StrangerThings', title: 'Hope you like season 4!', string: 'n/a', img_url: 'https://images.immediate.co.uk/production/volatile/sites/3/2019/11/stranger-things-season-3-83cae06.jpg?quality=90&resize=620%2C413.png')
+@post = Post.create!(title: 'Hope you like season 4!', string: 'n/a', img_url: 'https://images.immediate.co.uk/production/volatile/sites/3/2019/11/stranger-things-season-3-83cae06.jpg?quality=90&resize=620%2C413.png', username: '@StrangerThings')
 
 @comment = Comment.create!(username: '@StrangerThings', content: 'Add a like!', like: true, post_id: @post)
 

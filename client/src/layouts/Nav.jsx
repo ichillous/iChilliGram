@@ -14,17 +14,17 @@ const Nav = () => {
           </li>
           <li className="nav-item">
            
-              Icon
+              <i class="fa fa-home"></i>
             
           </li>
           <li className="nav-item">
             
-              Icon
+          <i class="fa fa-location-arrow"></i>
            
           </li>
           <li className="nav-item">
             
-              Icon
+          <i class="fa fa-compass"></i>
             
           </li>
         </ul>

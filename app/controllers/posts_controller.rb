@@ -1,14 +1,8 @@
 class PostsController < ApplicationController
-    has_many: :comments, 
-    :has_one :tag
+  before_action :set_post, only: [:show, :craete, :update, :destroy]
+ 
     def new
         @post = Post.new
-    end
-
-    #GET /posts/1
-    def show
-        @post = Post.find(params[:id])
-        render json: @posts, include: :comments
     end
 
     #GET /posts
@@ -16,7 +10,13 @@ class PostsController < ApplicationController
         @posts = Post.all
 
         render json: @posts, include: :comments
+    end  
+    #GET /posts/1
+    def show
+        render json: @post
     end
+
+ 
     #POST /posts
     def create
         @post = Post.new(params[:post].permit(:title, :username, :img_url))
@@ -31,7 +31,7 @@ class PostsController < ApplicationController
     #PATCH/PUT /posts/1
     def update
         if @post.update(post_params)
-          render json: @post, include: :comments
+          render json: @post
         else
           render json: @post.errors, status: :unprocessable_entity
         end
@@ -51,4 +51,10 @@ class PostsController < ApplicationController
         @post.destroy
       end
 
+      def set_post
+        @post = Post.find(params[:id])
+      end
+      def post_params
+        params.require(:post).permit(:title)
+      end
 end
