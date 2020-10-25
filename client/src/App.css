@@ -40,3 +40,10 @@
 .posts {
   margin: 50px;
 }
+img {
+  max-width: 300px;
+}
+
+.main-layout {
+  display: flex;
+}

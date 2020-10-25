@@ -1,9 +1,9 @@
 import React from "react";
 import PostEdit from "./PostEdit";
 import { Link } from "react-router-dom";
-
+import Comments from "./Comments"
 export default function Posts(props) {
-  const { posts, setPosts } = props;
+  const { posts, setPosts, handleDelete } = props;
   console.log(posts);
 //should have a handle edit function
   return (
@@ -16,11 +16,10 @@ export default function Posts(props) {
             <img src={post.img_url} />
           </Link>
           <p>{post.title}</p>
-          <Link to={`/post/${post.id}/edit`}>
-            <button>Edit</button>
-          </Link>
-          <PostEdit postId={post.id} posts={posts} setPosts={setPosts}/>
+          <p>#{post.tag.category}</p>
           
+          <PostEdit postId={post.id} posts={posts} setPosts={setPosts} handleDelete={handleDelete}/>
+          <Comments comments={post.comments}/>
           {/* add post.com<Comments />ments here  */}
         </div>
       ))}

@@ -8,7 +8,8 @@ export default function PostEdit(props) {
     img_url: img_url,
     posts,
     postId,
-    setPosts
+    setPosts,
+    handleDelete
   } = props;
 
   const [formData, setFormData] = useState({
@@ -52,11 +53,7 @@ export default function PostEdit(props) {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
-  //   const handleSubmit = async (event) =>{
-  //       event.preventDefault()
-  //       await putPost(id, posts)
-  //       loadUpdate()
-  //   }
+  
 
   return (
     <form
@@ -75,8 +72,11 @@ export default function PostEdit(props) {
           onChange={handleChange}
         />
       </label>
-      <input type="submit" value="Create"/>
-      <input type="submit" value="Delete" className="delete-btn" onClick={() => destroyPost(postId)}/>
+      <input type="submit" value="Edit"/>
+      <input type="submit" value="Delete" className="delete-btn" onClick={(e) => {
+          e.preventDefault()
+          handleDelete(postId)}
+          }/>
     </form>
   );
 }

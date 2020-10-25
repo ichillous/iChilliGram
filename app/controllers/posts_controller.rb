@@ -9,11 +9,11 @@ class PostsController < ApplicationController
     def index
         @posts = Post.all
 
-        render json: @posts, include: :comments
+        render json: @posts, include: [:comments, :tag]
     end  
     #GET /posts/1
     def show
-        render json: @post
+        render json: @post, include: [:comments, :tag]
     end
 
  
@@ -23,7 +23,7 @@ class PostsController < ApplicationController
       # @post = Post.new(params[:post].permit( :title, :username, :img_url))
         
         if @post.save
-            render json: @post, status: :created
+            render json: @post, include: [:comments, :tag] , status: :created
         else
             render json: @post.errors, status: :unprocessable_entity
         end
@@ -32,7 +32,7 @@ class PostsController < ApplicationController
     #PATCH/PUT /posts/1
     def update
         if @post.update(post_params)
-          render json: @post
+          render json: @post, include: [:comments, :tag]
         else
           render json: @post.errors, status: :unprocessable_entity
         end
@@ -56,6 +56,6 @@ class PostsController < ApplicationController
         @post = Post.find(params[:id])
       end
       def post_params
-        params.require(:post).permit(:title, :username, :img_url)
+        params.require(:post).permit(:title, :username, :img_url, :tag_id)
       end
 end

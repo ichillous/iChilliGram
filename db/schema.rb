@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_20_161958) do
+ActiveRecord::Schema.define(version: 2020_10_25_184823) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,8 +32,9 @@ ActiveRecord::Schema.define(version: 2020_10_20_161958) do
     t.string "username"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.bigint "tag_id", null: false
+    t.index ["tag_id"], name: "index_posts_on_tag_id"
   end
-  
 
   create_table "tags", force: :cascade do |t|
     t.string "name"
@@ -43,4 +44,5 @@ ActiveRecord::Schema.define(version: 2020_10_20_161958) do
   end
 
   add_foreign_key "comments", "posts"
+  add_foreign_key "posts", "tags"
 end
