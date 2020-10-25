@@ -16,12 +16,13 @@ export const getOnePost = async (id) => {
 
 
 export const postPost = async (postData) => {
-    const resp = await api.post('/posts', {Post: postData});
+    const resp = await api.post('/posts', {post: postData});
     return resp.data;
   }
   
-  export const putPost = async (id, postData) => {
-    const resp = await api.put(`/posts/${id}`, {Post: postData});
+  export const putPost = async (id, postData) => { 
+    console.log(id)
+    const resp = await api.put(`/posts/${id}`, {post: postData});
     return resp.data;
   }
   // console.log()

@@ -3,9 +3,9 @@ import PostEdit from "./PostEdit";
 import { Link } from "react-router-dom";
 
 export default function Posts(props) {
-  const { posts } = props;
+  const { posts, setPosts } = props;
   console.log(posts);
-
+//should have a handle edit function
   return (
     <div className="posts">
 
@@ -19,7 +19,7 @@ export default function Posts(props) {
           <Link to={`/post/${post.id}/edit`}>
             <button>Edit</button>
           </Link>
-          <PostEdit />
+          <PostEdit postId={post.id} posts={posts} setPosts={setPosts}/>
           
           {/* add post.com<Comments />ments here  */}
         </div>

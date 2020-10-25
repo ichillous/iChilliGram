@@ -20,7 +20,7 @@ function App() {
     <div className="App">
       <Nav />
       {/* <Layout/> */}
-      <Posts posts={posts}/> {/*passing it down to props*/}
+      <Posts posts={posts} setPosts={setPosts}/> {/*passing it down to props*/}
     </div>
   );
 }

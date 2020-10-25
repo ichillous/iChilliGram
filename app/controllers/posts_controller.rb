@@ -19,10 +19,11 @@ class PostsController < ApplicationController
  
     #POST /posts
     def create
-        @post = Post.new(params[:post].permit(:title, :username, :img_url))
+      @post = Post.new(post_params)
+      # @post = Post.new(params[:post].permit( :title, :username, :img_url))
         
         if @post.save
-            render json: @post, include: :comments , status: :created
+            render json: @post, status: :created
         else
             render json: @post.errors, status: :unprocessable_entity
         end
@@ -55,6 +56,6 @@ class PostsController < ApplicationController
         @post = Post.find(params[:id])
       end
       def post_params
-        params.require(:post).permit(:title)
+        params.require(:post).permit(:title, :username, :img_url)
       end
 end
