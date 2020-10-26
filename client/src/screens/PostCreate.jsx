@@ -32,34 +32,35 @@ export default function PostCreate(props) {
       >
         <h3>Create Post</h3>
         <label>
-          Username:
+          Username:<br/>
           <input
             type="text"
             name="username"
             value={formData.username}
             onChange={handleChange}
-          />
-          Title:
+          /><br/>
+          Title:<br/>
           <input
             type="text"
             name="title"
             value={formData.title}
             onChange={handleChange}
-          />
-          Image URL:
+          /><br/>
+          Image URL:<br/>
           <input
             type="text"
             name="img_url"
             value={formData.img_url}
             onChange={handleChange}
           />
-        </label>
-        <select onChange={handleChange} name="tag_id" defaultValue="default">
+        </label><br/>
+        <select className="select-css" onChange={handleChange} name="tag_id" defaultValue="default">
             <option disabled value="default">--Select a Tag--</option>
             {tags.map((tag) => (
                 <option value={tag.id}>{tag.category}</option>
             ))}
         </select>
+        <br/><br/>
         <button className="create-btn">Post</button>
       </form>
     </div>

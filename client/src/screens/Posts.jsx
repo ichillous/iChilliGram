@@ -10,15 +10,17 @@ export default function Posts(props) {
     <div className="posts">
 
       {posts.map((post) => (
-        <div key={post.id}>
+        <div className="post-container" key={post.id}>
+          <i class='fa fa-user-circle'></i>
           <Link to={`/posts/${post.id}`}>
-            <p>{post.username}</p>
-            <img src={post.img_url} />
+          <p>{post.username}</p><br/>
+            <img src={post.img_url} /><br/><br/><br/>
           </Link>
-          <p>{post.title}</p>
-          <p>#{post.tag.category}</p>
+          <div className="fa-and-title"><i class='fa fa-user-circle'></i><p className="post-title">{post.title}</p></div>
+          <p className="post-tags">#{post.tag.category}</p>
           
           <PostEdit postId={post.id} posts={posts} setPosts={setPosts} handleDelete={handleDelete}/>
+          <p className="comments-highlight">Comments here:</p><br/><br/><br/>
           <Comments comments={post.comments}/>
           {/* add post.com<Comments />ments here  */}
         </div>

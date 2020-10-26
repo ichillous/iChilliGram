@@ -43,17 +43,17 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Nav /> */}
+      <Nav />
       <Switch>
         <Route path="/post/new">
-        <PostCreate handlePostCreate={handlePostCreate} posts={posts} setPosts={setPosts} tags={tags}/>
+        <PostCreate handlePostCreate={handlePostCreate} posts={posts} setPosts={setPosts} tags={tags} className="postCreate"/>
       </Route>
       {/* <Layout/> */}
       <Route path="/">
         <div className="main-layout">
         <Posts posts={posts} setPosts={setPosts} handleDelete={handleDelete}/>
         <div>
-          <Link to="/post/new"><button>Create</button></Link>
+          <Link to="/post/new"><button className="newpost-btn"><i className="fa fa-plus-square-o"></i> Create</button></Link>
         </div>
       </div>
       </Route>

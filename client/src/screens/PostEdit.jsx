@@ -56,24 +56,26 @@ export default function PostEdit(props) {
   
 
   return (
-    <form
+    <form className="edit-form"
       onSubmit={(e) => {
         e.preventDefault();
         handlePostEdit(postId, formData);
       }}
     >
-      <h3>Edit Post</h3>
+      <p><strong>Edit Post</strong></p>
       <label>
-        Title:
+        Title: 
         <input
           type="text"
           name="title"
+          className="edit-form-input"
           value={formData.title}
           onChange={handleChange}
-        />
+        /> 
       </label>
-      <input type="submit" value="Edit"/>
-      <input type="submit" value="Delete" className="delete-btn" onClick={(e) => {
+      <br/>
+      <input className="editmain-btn" type="submit" value="Edit"/>
+      <input type="submit" value="X" className="delete-btn" onClick={(e) => {
           e.preventDefault()
           handleDelete(postId)}
           }/>

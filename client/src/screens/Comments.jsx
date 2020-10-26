@@ -5,11 +5,11 @@ export default function Comments(props){
 
 
     return (
-        <div>
+        <div className="comments">
             {comments.map(comment =>(
                 <div key={comment.id}>
-                    <p>{comment.username}</p>
-                    <p>{comment.content}</p>
+                    <p><strong>{comment.username}</strong>  {comment.content}</p>
+                    
                 </div>
             ))}
         </div>
